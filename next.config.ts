@@ -1,0 +1,12 @@
+import type { NextConfig } from "next";
+import path from "path";
+
+const nextConfig: NextConfig = {
+  transpilePackages: ["three"],
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
+  outputFileTracingRoot: path.resolve(__dirname),
+};
+
+export default nextConfig;
